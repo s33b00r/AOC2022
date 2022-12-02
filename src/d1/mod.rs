@@ -21,26 +21,24 @@ fn get_calories_list() -> Vec<i32> {
     return list;
 }
 
-pub fn highest_calories() {
+pub fn highest_calories() -> i32 {
     let mut highest = 0;
 
-    for cal in get_calories_list().iter() {
-        if highest < *cal {
-            highest = *cal
+    for cal in get_calories_list() {
+        if highest < cal {
+            highest = cal
         }
     }
-
-    println!("{highest}");
+    return highest;
 }
 
-pub fn highest_calories_times_3() {
+pub fn highest_calories_times_3() -> i32 {
     let mut highest = [0; 3];
-    for cal in get_calories_list().iter() {
-        if highest[0] < *cal {
-            highest[0] = *cal;
+    for cal in get_calories_list() {
+        if highest[0] < cal {
+            highest[0] = cal;
             highest.sort();
         }
     }
-    let sum: i32 = highest.iter().sum();
-    println!("{sum}");
+    return highest.iter().sum();
 }

@@ -1,6 +1,6 @@
 mod d1;
+mod d2;
 
 fn main() {
-    d1::highest_calories();
-    d1::highest_calories_times_3();
+    println!("{}", d2::unknown_response_score());
 }
