@@ -1,4 +1,4 @@
-use std::{fs, collections::HashSet};
+use std::{fs, collections::HashSet, slice::Chunks};
 
 fn get_input() -> Vec<String> {
     return fs::read_to_string("res/d3.txt")
