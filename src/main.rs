@@ -2,8 +2,9 @@
 //mod d2;
 //mod d3;
 //mod d4;
-mod d5;
+//mod d5;
+mod d6;
 
 fn main() {
-    println!("{}", d5::upper_crates_2());
+    println!("{}", d6::marker_2());
 }
