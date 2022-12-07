@@ -3,8 +3,10 @@
 //mod d3;
 //mod d4;
 //mod d5;
-mod d6;
+//mod d6;
+mod d7;
+
 
 fn main() {
-    println!("{}", d6::marker_2());
+    println!("{}", d7::get_smallest_to_remove());
 }
