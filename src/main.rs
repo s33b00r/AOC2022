@@ -10,7 +10,7 @@ mod d9;
 
 
 fn main() {
-    println!("1: {} \n2: {}", d9::get_nr_tail_pos(), d9::get_nr_tail_pos_2());
+    println!("1: {} \n2: {}", d9::get_nr_tail_pos(2), d9::get_nr_tail_pos(10));
 }
 
 /*#[test]
