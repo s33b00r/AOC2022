@@ -6,11 +6,12 @@
 //mod d6;
 //mod d7;
 //mod d8;
-mod d9;
+//mod d9;
+mod d10;
 
 
 fn main() {
-    println!("1: {} \n2: {}", d9::get_nr_tail_pos(2), d9::get_nr_tail_pos(10));
+    println!("1: {} \n2: {}", d10::get_signal_strength(), d10::write_to_screen());
 }
 
 /*#[test]

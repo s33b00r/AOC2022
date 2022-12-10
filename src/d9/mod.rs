@@ -1,9 +1,13 @@
-use std::{fs, collections::HashSet};
+use std::{fs, collections::{HashSet}};
 
-fn get_input() -> Vec<Vec<String>>{
+fn get_input() -> Vec<(String, i32)>{
+    fn get_pair(s: &str) -> (String, i32) {
+        let sp = s.split_once(' ').unwrap();
+        return (sp.0.to_string(), sp.1.parse().unwrap());
+    }
     return fs::read_to_string("res/d9.txt").expect("Could not find file")
         .lines()
-        .map(|l| l.split_whitespace().map(|s| s.to_string()).collect())
+        .map(|l| get_pair(l))
         .collect();
 }
 
@@ -20,14 +24,10 @@ fn move_dir(dir: &String, pos: (i32, i32)) -> (i32, i32) {
 fn next_pos(ahead: (i32, i32), current: (i32, i32)) -> (i32, i32) {
     let dx = ahead.0 - current.0;
     let dy = ahead.1 - current.1;
-    
-    return match (dx.abs(), dy.abs()) {
-        (2, 0) => (current.0 + dx / 2, current.1),
-        (2, 1) => (current.0 + dx / 2, current.1 + dy),
-        (1, 2) => (current.0 + dx, current.1 + dy / 2),
-        (0, 2) => (current.0, current.1 + dy / 2),
-        (2, 2) => (current.0 + dx / 2, current.1 + dy / 2),
-        _ => current
+    return if dx.abs() > 1 || dy.abs() > 1 {
+        (current.0 + dx.signum(), current.1 + dy.signum())
+    } else {
+        current
     }
 }
 
@@ -36,9 +36,8 @@ pub fn get_nr_tail_pos(knots: usize) -> i32 {
     tail_pos.insert((0, 0));
     let mut ropes = vec![(0, 0); knots];
     for step in get_input() {
-        let s: i32 = step[1].parse().unwrap();
-        for _ in 0..s {
-            ropes[0] = move_dir(&step[0], ropes[0]);
+        for _ in 0..step.1 {
+            ropes[0] = move_dir(&step.0, ropes[0]);
             for i in 1..ropes.len() {
                 ropes[i] = next_pos(ropes[i - 1], ropes[i]);
             }
