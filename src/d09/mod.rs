@@ -5,7 +5,7 @@ fn get_input() -> Vec<(String, i32)>{
         let sp = s.split_once(' ').unwrap();
         return (sp.0.to_string(), sp.1.parse().unwrap());
     }
-    return fs::read_to_string("res/d9.txt").expect("Could not find file")
+    return fs::read_to_string("res/d09.txt").expect("Could not find file")
         .lines()
         .map(|l| get_pair(l))
         .collect();

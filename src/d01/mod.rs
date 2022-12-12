@@ -1,7 +1,7 @@
 use std::fs;
 
 fn get_input() -> Vec<String> {
-    let file_contents = fs::read_to_string("res/d1.txt").expect("Could not read file");
+    let file_contents = fs::read_to_string("res/d01.txt").expect("Could not read file");
     return file_contents.lines().map(|x| x.to_string()).collect()
 }
 

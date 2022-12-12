@@ -12,7 +12,7 @@ fn as_round(s: String) -> Round {
 }
 
 fn get_input() -> Vec<Round> {
-    let file_contents = fs::read_to_string("res/d2.txt").expect("Could not read file");
+    let file_contents = fs::read_to_string("res/d02.txt").expect("Could not read file");
     return file_contents.lines()
         .map(|x| as_round(x.to_string()))
         .collect();

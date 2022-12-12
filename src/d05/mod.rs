@@ -1,7 +1,7 @@
 use std::{collections::LinkedList, fs, str::Lines};
 
 fn get_input() -> (Vec<LinkedList<char>>, Vec<(i32, usize, usize)>) {
-    let input = fs::read_to_string("res/d5.txt").expect("Could not find file");
+    let input = fs::read_to_string("res/d05.txt").expect("Could not find file");
     let split_i = input.find("\n\n").unwrap();
 
     let cols = (input[0..split_i].lines().last().unwrap().len() - 1) / 4 + 1;

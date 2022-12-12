@@ -1,7 +1,7 @@
 use std::{fs, ops::Add, collections::{HashMap, VecDeque}};
 
 fn get_dir_sizes() -> HashMap<String, i32> {
-    let input = fs::read_to_string("res/d7.txt").expect("Could not find file");
+    let input = fs::read_to_string("res/d07.txt").expect("Could not find file");
 
     let mut size_map: HashMap<String, i32> = HashMap::new();
     let mut dir_stack: VecDeque<String> = VecDeque::new();

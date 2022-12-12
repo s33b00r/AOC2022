@@ -1,7 +1,7 @@
 use std::{fs, collections::HashSet, slice::Chunks};
 
 fn get_input() -> Vec<String> {
-    return fs::read_to_string("res/d3.txt")
+    return fs::read_to_string("res/d03.txt")
         .expect("Could not read file")
         .lines()
         .map(|x| x.to_string())

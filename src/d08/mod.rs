@@ -1,7 +1,7 @@
 use std::{fs, collections::HashSet};
 
 fn get_input() -> Vec<Vec<i32>> {
-    return fs::read_to_string("res/d8.txt").expect("Could not read file")
+    return fs::read_to_string("res/d08.txt").expect("Could not read file")
         .lines()
         .map(|x| x.chars().map(|c| c.to_digit(10).unwrap() as i32).collect())
         .collect::<Vec<Vec<i32>>>();

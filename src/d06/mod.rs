@@ -19,7 +19,7 @@ impl Unique for String {
 }
 
 fn get_input() -> String {
-    return fs::read_to_string("res/d6.txt").expect("Could not find file");
+    return fs::read_to_string("res/d06.txt").expect("Could not find file");
 }
 
 pub fn marker() -> i32 {

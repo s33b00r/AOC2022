@@ -1,7 +1,7 @@
 use std::fs;
 
 fn get_input() -> Vec<Vec<i32>> {
-    return fs::read_to_string("res/d4.txt")
+    return fs::read_to_string("res/d04.txt")
         .expect("Could not find file")
         .lines()
         .map(|x| x.to_string())
