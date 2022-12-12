@@ -8,11 +8,12 @@
 //mod d8;
 //mod d9;
 //mod d10;
-mod d11;
+//mod d11;
+mod d12;
 
 
 fn main() {
-    println!("1: {} \n2: {}", d11::get_inspected(20, &|x| x / 3), d11::get_inspected(10_000, &|x| x));
+    println!("1: {} \n2: {}", d12::steps(), d12::fewest_steps());
 }
 
 /*#[test]
