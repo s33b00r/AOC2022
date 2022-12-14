@@ -10,11 +10,12 @@
 //mod d10;
 //mod d11;
 //mod d12;
-mod d13;
+//mod d13;
+mod d14;
 
 
 fn main() {
-    println!("1: {} \n2: {}", d13::get_right_orders(), d13::get_decoder_key());
+    println!("1: {} \n2: {}", d14::amount_of_sand(), d14::amount_of_sand_2());
 }
 
 /*#[test]
