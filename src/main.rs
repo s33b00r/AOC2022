@@ -11,11 +11,12 @@
 //mod d11;
 //mod d12;
 //mod d13;
-mod d14;
+//mod d14;
+mod d15;
 
 
 fn main() {
-    println!("1: {} \n2: {}", d14::amount_of_sand(), d14::amount_of_sand_2());
+    println!("1: {} \n2: {}", d15::missing_in_row(2_000_000), d15::missing_beacon(4_000_000));
 }
 
 /*#[test]
