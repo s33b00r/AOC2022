@@ -1,3 +1,5 @@
+use crate::d16::get_total_pressure;
+
 //mod d01;
 //mod d02;
 //mod d03;
@@ -12,11 +14,14 @@
 //mod d12;
 //mod d13;
 //mod d14;
-mod d15;
+//mod d15;
+mod d16;
+
 
 
 fn main() {
-    println!("1: {} \n2: {}", d15::missing_in_row(2_000_000), d15::missing_beacon(4_000_000));
+    let (part1, part2) = get_total_pressure();
+    println!("1: {} \n2: {}", part1, part2);
 }
 
 /*#[test]
