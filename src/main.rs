@@ -14,12 +14,13 @@
 //mod d14;
 //mod d15;
 //mod d16;
-mod d17;
+//mod d17;
+mod d18;
 
 
 
 fn main() {
-    println!("1: {} \n2: {}", d17::height_of_rocks(), d17::height_of_rocks_2());
+    println!("1: {} \n2: {}", d18::get_surface_area(), d18::get_surface_area_without_pockets());
 }
 
 /*#[test]
