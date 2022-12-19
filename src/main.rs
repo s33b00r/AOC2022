@@ -1,5 +1,3 @@
-use crate::d16::get_total_pressure;
-
 //mod d01;
 //mod d02;
 //mod d03;
@@ -15,13 +13,13 @@ use crate::d16::get_total_pressure;
 //mod d13;
 //mod d14;
 //mod d15;
-mod d16;
+//mod d16;
+mod d17;
 
 
 
 fn main() {
-    let (part1, part2) = get_total_pressure();
-    println!("1: {} \n2: {}", part1, part2);
+    println!("1: {} \n2: {}", d17::height_of_rocks(), d17::height_of_rocks_2());
 }
 
 /*#[test]
