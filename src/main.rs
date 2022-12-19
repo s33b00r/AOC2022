@@ -15,12 +15,13 @@
 //mod d15;
 //mod d16;
 //mod d17;
-mod d18;
+//mod d18;
+mod d19;
 
 
 
 fn main() {
-    println!("1: {} \n2: {}", d18::get_surface_area(), d18::get_surface_area_without_pockets());
+    println!("1: {} \n2: {}", d19::get_quality_levels(), d19::get_highest_geodes());
 }
 
 /*#[test]
