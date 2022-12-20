@@ -16,12 +16,13 @@
 //mod d16;
 //mod d17;
 //mod d18;
-mod d19;
+//mod d19;
+mod d20;
 
 
 
 fn main() {
-    println!("1: {} \n2: {}", d19::get_quality_levels(), d19::get_highest_geodes());
+    println!("1: {} \n2: {}", d20::get_decrypted_coords(1, 1), d20::get_decrypted_coords(811589153, 10));
 }
 
 /*#[test]
