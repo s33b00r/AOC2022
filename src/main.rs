@@ -17,19 +17,19 @@
 //mod d17;
 //mod d18;
 //mod d19;
-mod d20;
-
+//mod d20;
+mod d21;
 
 
 fn main() {
-    println!("1: {} \n2: {}", d20::get_decrypted_coords(1, 1), d20::get_decrypted_coords(811589153, 10));
+    println!("1: {} \n2: {}", d21::get_roots_number(), d21::get_humns_number());
 }
 
 /*#[test]
 fn test() {
     for _ in 0..1_000 {
-        d8::get_visible();
-        d8::get_highest_scenic_score();
+        d21::get_roots_number();
+        d21::get_humns_number();
     }
-    println!("1: {} \n2: {}", d8::get_visible(), d8::get_highest_scenic_score());
+    println!("1: {} \n2: {}", d21::get_roots_number(), d21::get_humns_number());
 }*/
